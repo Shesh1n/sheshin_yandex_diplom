@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 SELECT c.login, COUNT(o."inDelivery") AS orders_count 
 FROM "Orders" AS o 
 INNER JOIN "Couriers" AS c 
 ON c.id = o."courierId" 
 WHERE o."inDelivery" = true 
+=======
+SELECT c.login, COUNT(o."inDelivery") AS orders_count 
+FROM "Orders" AS o 
+INNER JOIN "Couriers" AS c 
+ON c.id = o."courierId" 
+WHERE o."inDelivery" = true 
+>>>>>>> 8a4d2a0453e5bd83c39baaebf0ab4996897e95a6
 GROUP BY c.login;

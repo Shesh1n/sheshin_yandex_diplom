@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SELECT track,
 CASE
     WHEN finished = true THEN 2
@@ -5,4 +6,13 @@ CASE
     WHEN "inDelivery" = true THEN 1
     ELSE 0
     END AS status
+=======
+SELECT track,
+CASE
+    WHEN finished = true THEN 2
+    WHEN cancelled = true THEN -1
+    WHEN "inDelivery" = true THEN 1
+    ELSE 0
+    END AS status
+>>>>>>> 8a4d2a0453e5bd83c39baaebf0ab4996897e95a6
 FROM "Orders";
